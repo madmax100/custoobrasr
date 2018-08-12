@@ -1,0 +1,8 @@
+.navbar-brand {
+    font-family: 'Peralta', cursive;
+    font-size: xx-large;
+}
+
+.navbar .active {
+    font-weight: bold;
+}

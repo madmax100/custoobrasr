@@ -1,0 +1,39 @@
+{% load form_tags widget_tweaks %}
+<div>
+    {{ form.estado.label_tag }} {% render_field form.estado %} {% if form.estado.help_text %}
+    <small class="form-text text-muted">
+             {{ form.estado.help_text }}
+        </small> {% endif %}
+</div>
+<div>
+    {{ form.tipo.label_tag }} {% render_field form.tipo class="form-check-input" %} {% if form.tipo.help_text %}
+    <small class="form-text text-muted">
+         {{ form.tipo.help_text }}
+    </small> {% endif %}
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    {{ form.area.label_tag }} {% render_field form.area class="form-inline" %} {% if form.area.help_text %}
+    <small class="form-text text-muted">
+        {{ form.area.help_text }}
+    </small> {% endif %}
+</div>
+<div>
+    {{ form.num_pavimentos.label_tag }} {% render_field form.num_pavimentos class="form-inline" %} {% if form.num_pavimentos.help_text %}
+    <small class="form-text text-muted">
+        {{ form.num_pavimentos.help_text }}
+    </small> {% endif %}
+</div>
+<div>
+    {{ form.padrao.label_tag }} {% render_field form.padrao class="form-check-input" %} {% if form.padrao.help_text %}
+    <small class="form-text text-muted">
+             {{ form.padrao.help_text }}
+    </small> {% endif %}
+</div>
+<br>
+<br>
+<br>
+<br>
